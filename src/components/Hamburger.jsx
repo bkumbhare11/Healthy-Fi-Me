@@ -12,12 +12,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Link } from "react-router-dom";
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
-} from "@clerk/clerk-react";
 
 function Hamburger() {
   return (
@@ -29,12 +23,7 @@ function Hamburger() {
       </SheetTrigger>
       <SheetContent className="bg-[#e6d7ca]">
         <SheetHeader>
-          <SheetTitle>
-            {/* User Profile */}
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-          </SheetTitle>
+          <SheetTitle></SheetTitle>
         </SheetHeader>
         <div className="grid flex-1 auto-rows-min gap-6 px-4">
           <div className="grid gap-3">

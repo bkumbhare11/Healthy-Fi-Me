@@ -60,7 +60,11 @@ function Navbar() {
           </div>
         </div>
 
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-2 ">
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+
           <Hamburger />
         </div>
       </div>
